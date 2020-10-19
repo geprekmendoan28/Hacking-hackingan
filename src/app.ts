@@ -47,4 +47,9 @@ const amount = document.querySelector("#amount") as HTMLInputElement;
 form.addEventListener("submit", (e: Event) => {
   e.preventDefault();
   //   console.log(type.value, tofrom.value, details.value, amount.valueAsNumber);
+const a = 1;
+const b = 2;
+const total = a + b;
+console.log(total);
+
 });
