@@ -1,9 +1,10 @@
-// Interfaces
+
 interface IsPerson {
   name: string;
   age: number;
   speak(a: string): void;
   spend(a: number): number;
+  description: string;
 }
 
 const me: IsPerson = {
@@ -16,6 +17,7 @@ const me: IsPerson = {
     console.log("I spent,", amount);
     return amount;
   },
+  description: "Halolololo"
 };
 const greatPerson = (person: IsPerson) => {
   console.log("hello", person.name);
@@ -38,7 +40,6 @@ invoices.forEach((inv) => {
 
 const form = document.querySelector(".new-item-form") as HTMLFormElement;
 
-// Inputs
 const type = document.querySelector("#type") as HTMLSelectElement;
 const tofrom = document.querySelector("#tofrom") as HTMLInputElement;
 const details = document.querySelector("#details") as HTMLInputElement;
@@ -46,7 +47,6 @@ const amount = document.querySelector("#amount") as HTMLInputElement;
 
 form.addEventListener("submit", (e: Event) => {
   e.preventDefault();
-  //   console.log(type.value, tofrom.value, details.value, amount.valueAsNumber);
 const a = 1;
 const b = 2;
 const total = a + b;
